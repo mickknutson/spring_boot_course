@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <groupId>com.springclass.boot</groupId>
+    <artifactId>boot-code</artifactId>
+    <version>2.0-RELEASE</version>
+
+    <name>boot-code</name>
+    <description>Spring Boot: Code Shell Only</description>
+
+    <properties>
+    </properties>
+
+    <modules>
+        <module>spring-boot-mvc</module>
+        <module>spring-boot-rest-service</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Just add this plugin in Solution pom.xml's:
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.7.9</version>
+                    <executions>
+                        <execution>
+                            <id>prepare-agent</id>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>report</id>
+                            <phase>prepare-package</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>post-unit-test</id>
+                            <phase>test</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <dataFile>target/jacoco.exec</dataFile>
+                        <outputDirectory>target/jacoco</outputDirectory>
+                    </configuration>
+                </plugin>
+                -->
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
+</project>

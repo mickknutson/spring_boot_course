@@ -1,0 +1,14 @@
+#-----------------------------------------------------------------------------#
+# Appplication YAML #
+# inside ./src/main/resources/application.yml
+#-----------------------------------------------------------------------------#
+# Turn on debug logging to show ConditionEvaluationReport :
+debug: true
+
+#spring:
+#  autoconfigure:
+#    exclude:
+#      - org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration
+#      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+#      - org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+

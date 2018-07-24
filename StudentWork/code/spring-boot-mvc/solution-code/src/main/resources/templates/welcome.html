@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Mvc Excercise - Welcome</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/css/main.css}"
+	href="../../css/main.css" />
+</head>
+<body>
+	<div>
+		<div class="starter-template">
+			<h1>Spring Boot Thymeleaf Mvc Excercise</h1>
+			<h2>Single User from database</h2>
+		</div>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+			<tr>
+				<td th:text="${user.id}">-1</td>
+				<td th:text="${user.firstName}">Chuck</td>
+				<td th:text="${user.lastName}">Norris</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

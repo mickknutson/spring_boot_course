@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <!-- localRepository
+    | The path to the local repository maven will use to store artifacts.
+    |
+    | We DONT want to use this:
+    | Default: ${user.home}/.m2/repository
+    |
+    | Setting on the commandline:
+      mvn -Dmaven.repo.local=<path> ...
+    |
+    | Example:
+      mvn -Dmaven.repo.local=/Users/mickknutson/StudentWork/Tools/local/repository
+
+    | This Does NOT work on Mac:
+    <localRepository>${env.M2_REPO}</localRepository>
+
+    |
+    | Windows example of hard-coding the path:
+    <localRepository>C:/StudentWork/Tools/local/repository</localRepository>
+    |
+    | Mac version of hard coding the path to the Maven local repository:
+    -->
+    <localRepository>/Users/mickknutson/Documents/workspace/TRIVERA/Trivera_Spring_Boot/StudentWork/Tools/local/repository</localRepository>
+
+    <offline>true</offline>
+
+</settings>
