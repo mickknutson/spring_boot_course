@@ -25,7 +25,9 @@ public class TestClient {
 	 * @param args
 	 */
 	public static void main(String args[]) {
+
 		RestTemplate restTemplate = new RestTemplate();
+
 		String result = null;
 		
 		// In case there was a User in the database already;
@@ -69,9 +71,18 @@ public class TestClient {
 			HttpEntity<String> request = new HttpEntity<String>(userToPost, headers);
 			ResponseEntity<String> response = restTemplate.postForEntity(usersUri, request, String.class);
 
+
+
 			if (response != null) {
+                response.getStatusCode();
+                response.getStatusCodeValue();
+                response.getHeaders();
+
 				return response.getBody();
 			}
+
+
+
 		} catch (Exception e) {
 			log.error(e.getMessage(), e);
 		}

@@ -5,20 +5,28 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+// JSR-303
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 @Entity
 public class User {
  
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
- 
+    private Long id;
+
+    // JSR 349 -> crass Parameter valid, Custom Validations
+//    @NotNull
+//    @Size(max = 55)
+//    @Pattern(regexp = "regEx")
     private String firstName;
     private String lastName;
- 
+
     public String getFirstName() {
         return firstName;
     }
- 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -26,10 +34,11 @@ public class User {
     public String getLastName() {
         return lastName;
     }
- 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
     @Override
     public String toString() {
         return String.format(

@@ -14,7 +14,12 @@ public class WelcomeController {
 	
 	@Autowired
 	private UserRepository repository;
-	
+
+    /**
+     * http://localhost:8080/welcome
+     * @param model
+     * @return
+     */
 	@RequestMapping("/welcome")
 	public String welcome(Map<String, Object> model) {
 		User user = repository.findOne(1L);
@@ -22,3 +27,10 @@ public class WelcomeController {
 		return "welcome";
 	}
 }
+
+
+/*
+    *.html
+    *.jsp
+    *.jsf
+ */
